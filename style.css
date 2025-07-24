@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fffde7;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagen {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#pfp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto {
+    width: 100%;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.descripcion {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.nacho {
+    background-color: #fff176;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 700;
+}
+
+.los4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.los4 span {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#camaron1 {
+    background-color: #e57373;
+}
+
+#camaron2 {
+    background-color: #ffb74d;
+}
+
+#camaron3 {
+    background-color: #81c784;
+}
+
+/* los colores los saque de ChatGpt */
+#camaron4 {
+    background-color: #ba68c8;
+}
+
+.los4 span:hover {
+    transform: scale(1.02);
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    .descripcion {
+        font-size: 0.95rem;
+    }
+
+    .los4 {
+        grid-template-columns: 1fr;
+    }
+
+    .los4 span {
+        font-size: 0.9rem;
+    }
+}
